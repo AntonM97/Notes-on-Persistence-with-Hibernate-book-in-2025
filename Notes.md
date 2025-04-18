@@ -40,6 +40,7 @@ So instead try
 ```
 ***
 In **Handling the SessionFactory**
+
 when we finally get to implementation of HibernateUtil you might see the red under ExceptionInInitializerError and the problem there can actually be the wrong spelling - so pay attention. 
 ```java
         }catch(Throwable ex) {
