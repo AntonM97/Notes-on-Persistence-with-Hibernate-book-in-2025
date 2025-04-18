@@ -18,9 +18,11 @@ And i'd prefer to have less problems because of versions so I worked with:
 
 ***
 In mapping file, because of this you most probably will see all mapping underlined with red
-`<?xml version="1.0"?>
+```
+<?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
-"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">`
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+```
 
 Actually the issue is with the link `http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd` it probably won't work.
 instead you can try `http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd`
