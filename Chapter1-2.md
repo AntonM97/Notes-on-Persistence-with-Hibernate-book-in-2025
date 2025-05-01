@@ -49,3 +49,40 @@ when we finally get to implementation of HibernateUtil you might see the red und
             throw new ExceptionInInitializerError(ex);
         }
 ```
+In **Enabling logging and statistics**
+initially inserted log4j2 dependencies
+```
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.14.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.14.0</version>
+        </dependency>
+```
+But got `SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".`
+added dependency for slf4j adapter
+```
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>2.14.0</version>
+            <scope>compile</scope>
+        </dependency>
+```
+than I had `SLF4J: The requested version 1.6 by your slf4j binding is not compatible with [1.5.5, 1.5.6, 1.5.7, 1.5.8]`
+and it was solved with appropriate slf4j version
+```
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.6</version>
+        </dependency>
+```
+
+
+
+
