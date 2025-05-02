@@ -82,7 +82,10 @@ and it was solved with appropriate slf4j version
             <version>1.6.6</version>
         </dependency>
 ```
+Then I've got `main ERROR Unable to locate appender "MAIN" for logger config "root"`
+Cancelled "MAIN" appender from log4j config file
 
+`Exception in thread "main" org.hibernate.MappingException: An AnnotationConfiguration instance is required to use <mapping class="com.hibernate.raw.Message"/>`
 
 
 
